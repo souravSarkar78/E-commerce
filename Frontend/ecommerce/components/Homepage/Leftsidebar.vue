@@ -5,7 +5,7 @@
           <p class="text-2xl relative -right-20 md:hidden">
             <fa icon="window-close" />
           </p>
-            <div class="bg-red-600">
+            <div class="bg-red-500">
               <NuxtLink to="AllProducts">Products</NuxtLink>
             </div>
         </div>
