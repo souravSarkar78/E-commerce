@@ -1,18 +1,48 @@
 <template>
-    <div class="fixed top-0 h-14 md:h-20 left-0 md:left-60 right-0 text-center bg-green-300 duration-75 flex justify-center z-10">   <!-- //fixed sorale neme jacche body -->
-        <div class="inner-container w-full md:w-10/12 m-1 bg-blue-500 flex space-around items-center justify-around">
-        <div class="w-2/3">
-        <p class="md:hidden" @click="OpenLeftNavbar()"><fa :icon="['fas','align-justify']" /></p>
-        <p class="hidden md:block">Searchbar</p>
-        </div>
-        <div class="w-2/3">
-            <NuxtLink to="/">Logo/Home</NuxtLink>
-        </div>
-        <div class="w-2/3">
-        <fa :icon="['fab','github']" />
-        </div>
-        </div>
+  <div
+    class="
+      fixed
+      top-0
+      h-14
+      w-full
+      text-center
+      duration-75
+      flex
+      flex-wrap
+      justify-center
+      z-10
+      bg-gray-700
+    "
+  >
+    <!-- //fixed sorale neme jacche body -->
+    <div
+      class="
+        inner-container
+        w-full
+        m-1
+        flex
+        space-around
+        items-center
+        justify-around
+      "
+    >
+      <div class="w-2/3 md:hidden">
+        <p class="" @click="OpenLeftNavbar()">
+          <fa :icon="['fas', 'align-justify']" />
+        </p>
+        <!-- <p class="hidden md:block">Searchbar</p> -->
+      </div>
+      <div class="w-2/3 hidden md:block">
+      <NuxtLink to="/">Logo/Home</NuxtLink>
+      </div>
+      <div class="w-2/3">
+      <SearchBar />
+      </div>
+      <div class="w-2/3 text-white  hidden md:block">
+        <fa :icon="['fab', 'github']" />
+      </div>
     </div>
+  </div>
 </template>
 
 <script>

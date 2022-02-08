@@ -5,5 +5,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  mounted () {
+    document.body.style.margin = 0
+  }
+}
 </script>
