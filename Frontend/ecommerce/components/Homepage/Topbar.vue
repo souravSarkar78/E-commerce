@@ -10,7 +10,7 @@
       flex
       flex-wrap
       justify-center
-      z-10
+      z-5
       bg-gray-700
     "
   >
@@ -26,7 +26,7 @@
         justify-around
       "
     >
-      <div class="w-2/3 md:hidden">
+      <div class="w-2/3 hidden">
         <p class="" @click="OpenLeftNavbar()">
           <fa :icon="['fas', 'align-justify']" />
         </p>

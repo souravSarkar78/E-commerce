@@ -1,5 +1,5 @@
 <template>
-    <div class="sidebar fixed top-0 md:top-14 h-screen p-2 overflow-y-auto text-center bg-yellow-600 z-20">
+    <div class="sidebar fixed top-0 md:top-14 h-screen p-2 overflow-y-auto text-center bg-yellow-600 z-10">
         <!-- <div v-for="i in 100" key:"i">{{i}}</div> -->
         <div @click="OpenLeftNavbar()" class="">
           <p class="text-2xl relative float-right right-4 md:hidden">
